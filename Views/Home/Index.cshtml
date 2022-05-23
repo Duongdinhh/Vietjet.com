@@ -1,0 +1,384 @@
+﻿@{
+    ViewData["Title"] = "Trang mua vé";
+}
+<div class="text-center">
+    <h1>VÉ MÁY BAY GIÁ RẺ                 <p class="left"><img src="/css/10h20icon-18dec18.png" alt="" title="" style="margin-right: 5px;"></p>
+</h1>
+    <div class="footer-container">
+        <div id="usrMessageTop_pnlThongBao" class="TextThongbao" align="center">
+            <p class="right"><span class="tb-time12"><b style="color:#e84e0f;">Giờ làm việc: từ 0h-24h</b>, liên tục không nghỉ, kể cả chủ nhật, các ngày lễ tết</span><br><span class="tb-time22">Quý khách có bất kì thắc mắc hoặc cần trợ giúp, vui lòng gọi tổng đài <span class="tb-hotline">1900 6091.</span></span></p>
+        </div>
+    </div>
+</div>
+<center>
+<div id="book-ticket">
+   
+    <div class="main mainNoneBG">
+        <div class="MainForm">
+            <div class="line7"></div>
+            <div class="blank15"></div>
+            <table width="50%">
+                <tbody>
+                    <tr>
+                        <td colspan="2" height="40" valign="top" class="departure-container">
+                            <label class="diemdi" title="Chọn điểm đi">Điểm đi</label>
+                        </td>
+                        <td colspan="2" height="40" valign="top" class="departure-container">
+                            <label class="diemden" title="Chọn điểm đến">Điểm đến</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" height="40" valign="top" class="departure-container">
+                            <input name="ctl00$cphMain$ctl00$usrSearchFormDV2$txtFrom" type="text" value="Tp Hồ Chí Minh (SGN)" id="cphMain_ctl00_usrSearchFormDV2_txtFrom" class="startplace city departure" datetype="departure" onclick="select()" title="Chọn điểm đi" style="margin-right: 18px;">
+                            <span class="symbol reverse-command"></span>
+                        </td>
+                        <td colspan="2" height="40" valign="top">
+                            <input name="ctl00$cphMain$ctl00$usrSearchFormDV2$txtTo" type="text" value="Hà Nội (HAN)" id="cphMain_ctl00_usrSearchFormDV2_txtTo" class="endplace city arrival" datetype="arrival" onclick="select()" title="Chọn điểm đến">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="65" class="bold-font-white14 departure-date-label" title="Chọn ngày đi">Ngày đi</td>
+                        <td width="164"></td>
+                        <td width="55" class="bold-font-white14 arrival-date-label" title="Chọn ngày về">Ngày về</td>
+                        <td width="136">
+                            <span class="remove-date" style="color: black; padding: 4px; border-radius: 4px; background-color: yellow !important; display: none;" title="click để bỏ ngày về, chỉ tìm các chuyến bay chiều đi">Bỏ ngày về</span>
+                        </td>
+                    </tr>
+
+                <td colspan="2" style="position: relative;" class="datelunar-departure">
+                    <select name="ctl00$cphMain$ctl00$usrSearchFormDV2$cboDepartureDay" id="cphMain_ctl00_usrSearchFormDV2_cboDepartureDay" class="dateoption floatL focus-input cbo-departure-day cbo-datetype" datetype="departure">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option selected="selected" value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+
+                    </select>
+                    <select name="ctl00$cphMain$ctl00$usrSearchFormDV2$cboDepartureMonth" id="cphMain_ctl00_usrSearchFormDV2_cboDepartureMonth" class="monthoption floatL focus-input cbo-departure-month cbo-datetype" datetype="departure">
+                        <option selected="selected" value="02/2022">Tháng 02/2022</option>
+                        <option value="03/2022">Tháng 03/2022</option>
+                        <option value="04/2022">Tháng 04/2022</option>
+                        <option value="05/2022">Tháng 05/2022</option>
+                        <option value="06/2022">Tháng 06/2022</option>
+                        <option value="07/2022">Tháng 07/2022</option>
+                        <option value="08/2022">Tháng 08/2022</option>
+                        <option value="09/2022">Tháng 09/2022</option>
+                        <option value="10/2022">Tháng 10/2022</option>
+                        <option value="11/2022">Tháng 11/2022</option>
+                        <option value="12/2022">Tháng 12/2022</option>
+                        <option value="01/2023">Tháng 01/2023</option>
+
+                    </select>
+
+                </td>
+                <td colspan="2" style="position: relative;" class="datelunar-return">
+                    <select name="ctl00$cphMain$ctl00$usrSearchFormDV2$cboReturnDay" id="cphMain_ctl00_usrSearchFormDV2_cboReturnDay" class="dateoption floatL cbo-return-day cbo-datetype" datetype="return">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+
+                    </select>
+                    <select name="ctl00$cphMain$ctl00$usrSearchFormDV2$cboReturnMonth" id="cphMain_ctl00_usrSearchFormDV2_cboReturnMonth" class="monthoption floatL cbo-return-month cbo-datetype" datetype="return">
+                        <option value="0"></option>
+                        <option value="02/2022">Tháng 02/2022</option>
+                        <option value="03/2022">Tháng 03/2022</option>
+                        <option value="04/2022">Tháng 04/2022</option>
+                        <option value="05/2022">Tháng 05/2022</option>
+                        <option value="06/2022">Tháng 06/2022</option>
+                        <option value="07/2022">Tháng 07/2022</option>
+                        <option value="08/2022">Tháng 08/2022</option>
+                        <option value="09/2022">Tháng 09/2022</option>
+                        <option value="10/2022">Tháng 10/2022</option>
+                        <option value="11/2022">Tháng 11/2022</option>
+                        <option value="12/2022">Tháng 12/2022</option>
+                        <option value="01/2023">Tháng 01/2023</option>
+
+                    </select>
+                </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="blank10">
+            </div>
+            <div class="line6">
+            </div>
+            <div class="blank10">
+            </div>
+            <table width="50%">
+                <tbody>
+                    <tr valign="middle">
+                        <td class="normal-font-white14">
+                            Người lớn
+                        </td>
+                        <td width="28%" height="10">
+                            <select name="ctl00$cphMain$ctl00$usrSearchFormDV2$cboAdult" id="cphMain_ctl00_usrSearchFormDV2_cboAdult" class="personoption">
+                                <option selected="selected" value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+
+                            </select>
+                        </td>
+                        <td width="40%" class="smallText2">
+                            (từ 12 tuổi trở lên)
+                        </td>
+                    </tr>
+                    <tr valign="middle">
+                        <td class="normal-font-white14">
+                            Trẻ em
+                        </td>
+                        <td height="35">
+                            <select name="ctl00$cphMain$ctl00$usrSearchFormDV2$cboChild" id="cphMain_ctl00_usrSearchFormDV2_cboChild" class="personoption">
+                                <option selected="selected" value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+
+                            </select>
+                        </td>
+                        <td class="normal-font-white14">
+                            (từ 2 đến dưới 12 tuổi)
+                        </td>
+                    </tr>
+                    <tr valign="middle">
+                        <td class="normal-font-white14">
+                            Em bé
+                        </td>
+                        <td height="35">
+                            <select name="ctl00$cphMain$ctl00$usrSearchFormDV2$cboInfant" id="cphMain_ctl00_usrSearchFormDV2_cboInfant" class="personoption">
+                                <option selected="selected" value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+
+                            </select>
+                        </td>
+                        <td class="smallText2">
+                            (dưới 2 tuổi)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </center>
+            <center><a href="https://localhost:44370/bays/Create" class="btn btn-danger btn-lg">MUA VÉ</a></center>
+                        
+
+        <div class="service-method">               
+    <div class="saying">
+       <center>  <a href="/khach-hang-noi-ve-chung-toi" class="CustSay">Khách hàng nói về chúng tôi</a></center>
+        <ul>
+                <li>
+                    <img src="/_Web/_File/Images/HomePageD/MessagesIcon.png" alt=""><p>
+                        Rất hài lòng với dịch vụ của cty. Cám ơn bạn Hiếu đã tư vấn nhiệt tình cho tôi.<br>
+                        <span class="nameKH">Ngọc Anh - 09345568XX</span>
+                    </p>
+                    <div class="clr">
+                    </div>
+                </li>
+            
+                <li>
+                    <img src="/_Web/_File/Images/HomePageD/MessagesIcon.png" alt=""><p>
+                        Tôi thấy dịch vụ của Abay tất tốt, nhanh gọn, nhân viên nhiệt tình và dễ mến<br>
+                        <span class="nameKH">Nguyen Linh Ðat - 012425558XX</span>
+                    </p>
+                    <div class="clr">
+                    </div>
+                </li>
+            
+                <li>
+                    <img src="/_Web/_File/Images/HomePageD/MessagesIcon.png" alt=""><p>
+                        Rat cam on ban da tu van cho toi va gia dinh mua dc chuyen bay phu hop ca ve lich trinh cung nhu ve gia ca, dac biet cam on ban trai ...<br>
+                        <span class="nameKH">Hau - 0943368XX</span>
+                    </p>
+                    <div class="clr">
+                    </div>
+                </li>
+            
+                <li>
+                    <img src="/_Web/_File/Images/HomePageD/MessagesIcon.png" alt=""><p>
+                        Dịch vụ rất mởi mẻ, giá cả tốt, tôi sẽ còn đến với Abay nhiều lần nữa<br>
+                        <span class="nameKH">Huệ - 09434129XX</span>
+                    </p>
+                    <div class="clr">
+                    </div>
+                </li>
+            
+                <li>
+                    <img src="/_Web/_File/Images/HomePageD/MessagesIcon.png" alt=""><p>
+                        Đây là lần đầu tiên mình đặt vé máy bay trực tuyến qua Abay.vn. Đây là 1 hình thức đặt vé và thanh toán cực kỳ thuận tiện và nhanh chón ...<br>
+                        <span class="nameKH">Phạm Văn Đức - 09779828XX</span>
+                    </p>
+                    <div class="clr">
+                    </div>
+                </li>
+            
+                <li>
+                    <img src="/_Web/_File/Images/HomePageD/MessagesIcon.png" alt=""><p>
+                        Đây là lần đầu tiên tôi đặt vé tại  cho cả gđ đi Đà Nẵng,cảm nhận là rất tuyệt, dịch vụ hoàn hảo, tôi có thế lựa chon giá vé ...<br>
+                        <span class="nameKH">Ngô Thu Hương - 012366446XX</span>
+                    </p>
+                    <div class="clr">
+                    </div>
+                </li>
+            </ul>
+        <a href="/khach-hang-noi-ve-chung-toi" class="Viewmoree">Xem thêm</a>
+        <div class="clr"></div>                   
+    </div>
+    <div class="QuestionU">
+        <h4>Câu hỏi thường gặp</h4>
+        <ul class="qtQuestion faq-items">
+        
+                <li id="item-23" class="faq-item">
+                    <h4 class="question">››&nbsp;&nbsp;Phụ nữ mang thai đi máy bay cần lưu ý những gì?</h4>
+                    <div class="answer" style="display:none"><p>Phụ nữ mang thai dưới có sức khỏe tốt hoàn toàn có thể đi máy bay. Tuy nhiên phụ nữ mang thai cần tuân thủ các quy định riêng của hãng hàng không. Vui lòng đọc chi tiết <b><a href="https://www.abay.vn/tin-tuc/phu-nu-mang-thai-di-may-bay-vietnam-airlines-vietjet-air-va-jetstar-pacific-can-mang-nhung-giay-to-gi.aspx">tại đây</a></b></p></div>
+                </li>
+            
+                <li id="item-35" class="faq-item">
+                    <h4 class="question">››&nbsp;&nbsp;Tôi muốn đổi ngày bay và giờ bay thì có làm như thế nào?</h4>
+                    <div class="answer" style="display:none"><p>- Đối với hãng VietJet Air, vé Skyboss sẽ được miễn phí thay đổi. Các loại vé còn lại mất phí đổi.&nbsp;</p><p>- Đối với hãng Jetstar nếu mua vé Gói Linh hoạt hoặc Gói Tối ưu bạn sẽ được miễn phí thay đổi. Các loại vé còn lại mất phí đổi.&nbsp;</p><p>- Đối với hãng Vietnam Airlines, vé hạng Thương gia linh hoạt và Phổ thông linh hoạt sẽ được miễn phí thay đổi. Các hạng còn lại mất phí.</p><p>- Đối với hãng Bamboo Airways, vé Business sẽ được miễn phí thay đổi. Các loại vé còn lại mất phí đổi.&nbsp;<br></p><p>Xem bảng phí của 4 hãng hàng không Vietnam Airlines, Bamboo Airways, VietJet và Jetstar <a href="https://www.abay.vn/tin-tuc/phi-doi-ngay-bay-gio-bay-hanh-trinh-cua-vietnam-airlines-vietjet-air-va-jetstar-pacific.aspx"><b>tại đây</b></a>.</p></div>
+                </li>
+            
+                <li id="item-30" class="faq-item">
+                    <h4 class="question">››&nbsp;&nbsp;Tôi có được mang theo thịt tươi sống và hải sản theo hành lý lên máy bay không?</h4>
+                    <div class="answer" style="display:none"><p>Đối với hành lý là thịt tươi sống và hải sản, bạn cần tuân thủ quy định của hãng hàng không. Vui lòng đọc chi tiết hướng dẫn <b><a href="https://www.abay.vn/tin-tuc/thit-hai-san-tuoi-song-va-cac-loai-thuc-pham-chin-do-kho-co-duoc-mang-len-may-bay-khong.aspx">tại đây</a></b></p></div>
+                </li>
+            
+                <li id="item-31" class="faq-item">
+                    <h4 class="question">››&nbsp;&nbsp;Khi đi máy bay tôi có được mang theo rượu và nước mắm không?</h4>
+                    <div class="answer" style="display:none"><p>Khi đi máy bay bạn có thể mang theo rượu và nước mắm. Tuy nhiên cần tuân thủ các quy định về nồng độ, dung tích, quy cách đóng gói của các hãng hàng không. Vui lòng đọc chi tiết hướng dẫn <b><a href="https://www.abay.vn/tin-tuc/di-may-bay-co-duoc-mang-nuoc-mam-ruou-khong.aspx">tại đây</a></b>:</p></div>
+                </li>
+            
+                <li id="item-39" class="faq-item">
+                    <h4 class="question">››&nbsp;&nbsp;Tại sao ABAY là website bán vé máy bay giá rẻ tốt nhất?</h4>
+                    <div class="answer" style="display:none"><p style="text-align: justify;"><font face="arial, tahoma">ABAY sở hữu nhiều ưu điểm vượt trội như:</font></p><p style="text-align: justify;"><font face="arial, tahoma">- Giao diện website thân thiện, dễ sử dụng và được hỗ trợ đa nền tảng.</font></p><p style="text-align: justify;"><font face="arial, tahoma">Đặc biệt ABAY luôn hướng đến chất lượng dịch vụ chăm sóc khách hàng, với mong muốn đem đến lợi ích tốt nhất cho khách hàng !</font></p><p style="text-align: justify;"><font face="arial, tahoma">- Chức năng tìm kiếm hành trình bay theo đúng yêu cầu của khách hàng với đầy đủ thông số: chặng bay, giá vé, giờ bay.</font></p><p style="text-align: justify;"><font face="arial, tahoma">- Có chức năng so sánh giá vé của các hãng hàng không.</font></p><p style="text-align: justify;"><font face="arial, tahoma">- Chức năng tự động đặt vé máy bay nội địa và quốc tế.</font></p></div>
+                </li>
+            
+                <li id="item-22" class="faq-item">
+                    <h4 class="question">››&nbsp;&nbsp;Tôi bị mất chứng minh thư thì có được bay không ?</h4>
+                    <div class="answer" style="display:none"><p>Bạn bị mất chứng minh thư thì có thể dùng một số loại giấy tờ khác để thay thế như : hộ chiếu, bằng lái xe, giấy xác nhận nhân thân...</p><p>Chi tiết hướng dẫn vui lòng đọc <b><a href="https://www.abay.vn/tin-tuc/8-loai-giay-to-co-the-thay-the-chung-minh-thu-nhan-dan-khi-lam-thu-tuc-bay.aspx">tại đây</a></b></p></div>
+                </li>
+            
+                <li id="item-29" class="faq-item">
+                    <h4 class="question">››&nbsp;&nbsp;Tôi có được mang theo trái cây và rau xanh theo hành lý lên máy bay không?</h4>
+                    <div class="answer" style="display:none"><p>Đối với hành lý là trái cây và rau xanh, bạn cần tuân thủ quy định của hãng hàng không. Vui lòng đọc chi tiết hướng dẫn <b><a href="https://www.abay.vn/tin-tuc/mang-trai-cay-rau-xanh-rau-gia-vi-hoa-tuoi-len-may-bay-can-luu-y-dieu-gi.aspx">tại đây</a></b></p></div>
+                </li>
+            
+                <li id="item-27" class="faq-item">
+                    <h4 class="question">››&nbsp;&nbsp;Khi đi máy bay tôi được mang theo bao nhiêu kg hành lý xách tay?</h4>
+                    <div class="answer" style="display:none"><p>Quy định về hành lý xách tay khi đi máy bay<br>- Hạng vé Skyboss của VietJet Air bạn sẽ có 10kg hành lý xách tay miễn phí.</p><p>- Hạng vé Business của Bamboo Airways bạn sẽ có 14kg hành lý xách tay miễn phí.<br>Các hạng vé còn lại bạn sẽ được mang 7kg hành lý xách tay miễn phí mỗi người. Và số cân này là tính riêng từng người, không được phép gộp chung. Nếu quá 7kg bạn phải mua thêm hành lý ký gửi.</p></div>
+                </li>
+            
+                <li id="item-24" class="faq-item">
+                    <h4 class="question">››&nbsp;&nbsp;Em bé bao nhiêu tuổi thì được đi máy bay? Và cần những giấy tờ gì?</h4>
+                    <div class="answer" style="display:none"><p>Em bé từ 14 ngày tuổi trở lên là có thể đi máy bay.</p><p>Giấy tờ cần mang theo để làm thủ tục cho em bé/ trẻ em bạn vui lòng xem chi tiết <a href="https://www.abay.vn/tin-tuc/hanh-khach-bay-la-em-be-tre-em-co-gi-khac-biet-voi-nguoi-lon.aspx"><b>tại đây</b></a></p></div>
+                </li>
+            
+                <li id="item-26" class="faq-item">
+                    <h4 class="question">››&nbsp;&nbsp;Tôi cần có mặt ở sân bay trước bao nhiêu lâu để làm thủ tục bay?</h4>
+                    <div class="answer" style="display:none"><p>Đối với chuyến bay nội địa</p><p>- Bạn nên có mặt ở sân bay 2 giờ trước giờ khởi hành dự kiến. Thời gian đóng quầy làm thủ tục (kết thúc chấp nhận hành khách): 40 phút trước giờ khởi hành dự kiến.</p><p>Đối với chuyến bay quốc tế xuất phát từ Việt&nbsp; Nam</p><p>- Bạn nên có mặt ở sân bay 3 giờ trước giờ khởi hành dự kiến. Thời gian đóng quầy làm thủ tục (kết thúc chấp nhận hành khách): 50 phút trước giờ khởi hành dự kiến.</p></div>
+                </li>
+            
+                <li id="item-38" class="faq-item">
+                    <h4 class="question">››&nbsp;&nbsp;Đi máy bay cần mang những loại giấy tờ gì?</h4>
+                    <div class="answer" style="display:none"><p>Khi đi máy bay bạn hãy mang chứng minh thư để làm thủ tục . Trong trường hợp mất chứng minh thư thì có thể dùng một số loại giấy tờ khác để thay thế như:<br>- Hộ chiếu<br>- Bằng lái xe<br>- Giấy xác nhận nhân thân...</p><p>Để biết thêm chi tiết hướng dẫn bạn nhớ xem&nbsp;&nbsp;<b><a href="https://www.abay.vn/tin-tuc/8-loai-giay-to-co-the-thay-the-chung-minh-thu-nhan-dan-khi-lam-thu-tuc-bay.aspx">tại đây</a></b></p></div>
+                </li>
+            
+                <li id="item-5" class="faq-item">
+                    <h4 class="question">››&nbsp;&nbsp;Khi mua vé máy bay giá rẻ tại ABAY tôi có cần xuất trình chứng minh thư nhân dân không?</h4>
+                    <div class="answer" style="display:none">Khi mua vé máy bay tại ABAY bạn không cần xuất trình chứng minh thư nhân dân</div>
+                </li>
+            
+                <li id="item-33" class="faq-item">
+                    <h4 class="question">››&nbsp;&nbsp;Giá vé máy bay của trẻ em được tính như thế nào?</h4>
+                    <div class="answer" style="display:none"><p>Giá vé máy bay của trẻ em/em bé mỗi hãng hàng không sẽ khác nhau, cụ thể như sau:</p><p><b>Vietnam Airlines:</b></p><p>- Em bé dưới 2 tuổi giá vé bằng 10% giá vé cơ bản của người lớn</p><p>- Trẻ em từ 2 tuổi đến 12 tuổi giá vé bằng 90% giá vé cơ bản của người lớn</p><p><b>VietJet Air và Jetstar:</b></p><p>- Em bé dưới 2 tuổi miễn phí giá vé cơ bản</p><p>- Trẻ em từ 2 tuổi đến 12 tuổi giá vé bằng giá vé cơ bản của người lớn<br><b>Bamboo Airways:</b></p><p>- Trẻ em: Trẻ em từ 2 tuổi đến dưới 12 tuổi được tính là 75% giá vé người lớn.</p><p>- Em bé: Em bé dưới 2 tuổi chỉ cần thanh toán phí phục vụ trên chuyến bay 100.000VND/em bé (chưa bao gồm VAT).</p></div>
+                </li>
+            
+                <li id="item-37" class="faq-item">
+                    <h4 class="question">››&nbsp;&nbsp;Làm thế nào để tôi tìm được vé máy bay giá rẻ nhất?</h4>
+                    <div class="answer" style="display:none">Hệ thống của ABAY hiển thị và so sánh giá vé máy bay của tất cả các hãng hàng không nội địa VietJet, Jetstar, Vietnam Airlines, Bamboo cùng hàng trăm hãng hàng không uy tín trên thế giới. Hãy chọn hành trình bay cho mình và lựa chọn chuyến bay có giá rẻ nhất cho dự định của bạn. Vui lòng xem hướng dẫn chi tiết tìm vé máy bay giá rẻ nhất&nbsp;<b><a href="https://www.abay.vn/huong-dan-su-dung">tại đây</a></b>.</div>
+                </li>
+            
+        </ul>
+        <a href="/cau-hoi-thuong-gap" class="xemchitietQt">Xem chi tiết</a>
+    </div>
+    <div class="clr"></div>
+</div>
+       
+
+    </div>
+    <div class="clr">
+    </div>
+</div>
+</html>
